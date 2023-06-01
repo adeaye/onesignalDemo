@@ -2,10 +2,12 @@
 import React, { useEffect } from 'react';
 import './App.css';
 import runOneSignal from './utils/onesignal';
+import eruda from 'eruda';
 
 const App = () => {
   useEffect(() => {
     runOneSignal();
+    eruda.init()
   })
   return (
     <div className="App">
